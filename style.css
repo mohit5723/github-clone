@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.7rem 1rem;
+  background-color: #010409;
+  color: #fff;
+  width: 100%;
+}
+
+nav button {
+  color: grey;
+  padding: 5px 6px 1px 6px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.menu-button {
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 4px 8px;
+}
+
+hr {
+  border: 1px solid grey;
+  width: 1rem;
+  margin: 3px 0px;
+}
+
+.logo svg {
+  background-color: white;
+  border-radius: 50%;
+  width: min-content;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.right-section input {
+  background-color: transparent;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 4px 8px;
+}
+
+.search input {
+  padding: 5px;
+  width: 250px;
+}
+.profile {
+  background-color: #010409;
+  border: 0;
+}
+
+.profile img {
+  background-color: transparent;
+  border-radius: 50%;
+  width: max-content;
+  max-width: 30px;
+}
+
+.copilot-menu {
+  display: flex;
+}
+
+@media screen and (max-width: 1024px) {
+  .search input {
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .pull-requests-button,
+  .issues-button,
+  .create-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav button {
+    padding: 2px;
+  }
+  .dashboard {
+    width: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
